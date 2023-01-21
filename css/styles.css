@@ -59,6 +59,9 @@ nav li:not(:first-child) {
   letter-spacing: 0.02em;
   color: var(--primary-color);
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .header-contacts {
   margin-left: 345px;
@@ -74,6 +77,9 @@ nav li:not(:first-child) {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, fill;
 }
 .header-link:focus,
 .header-link:hover {
@@ -92,6 +98,9 @@ nav li:not(:first-child) {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .blue-color-logo {
   color: var(--primary-color);
@@ -324,6 +333,9 @@ nav li:not(:first-child) {
   align-items: center;
   width: 44px;
   height: 44px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 .team-icon-border:hover,
 .team-icon-border:focus {
@@ -423,6 +435,9 @@ nav li:not(:first-child) {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .foot-contacts-link:focus,
 .foot-contacts-link:hover {
@@ -443,6 +458,9 @@ nav li:not(:first-child) {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, fill;
 }
 .social-media-icon-border:hover,
 .social-media-icon-border:focus {
@@ -491,6 +509,9 @@ nav li:not(:first-child) {
   line-height: 1.62;
   letter-spacing: 0.03em;
   font-family: "Roboto";
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color, box-shadow;
 }
 .button:focus,
 .button:hover {
