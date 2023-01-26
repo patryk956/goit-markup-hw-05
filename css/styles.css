@@ -609,22 +609,13 @@ nav li:not(:first-child) {
 .modal-background {
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   z-index: 1;
-  transition-property: visibility;
-  visibility: visible;
-  display: flex;
-  animation-name: modalOpen;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
 }
 .modal {
-  top: 50%;
   left: 50%;
   width: 528px;
   height: 581px;
@@ -634,12 +625,9 @@ nav li:not(:first-child) {
   border-radius: 4px;
   position: fixed;
   z-index: 2;
-  transition-property: visibility, transform;
   transform: translateX(-50%) translateY(-50%);
-  transition-duration: 2s;
-  visibility: visible;
-  animation-name: modalframe;
-  animation-duration: 1000ms;
+  animation-name: modalopen;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -648,7 +636,7 @@ nav li:not(:first-child) {
   width: 30px;
   height: 30px;
   background-color: var(--third-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   cursor: pointer;
   margin-top: 8px;
@@ -656,25 +644,11 @@ nav li:not(:first-child) {
   display: flex;
   align-items: center;
 }
+
 @keyframes modalopen {
   0% {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  50% {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  100% {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-
-@keyframes modalframe {
-  0% {
     top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
   }
-
   100% {
     top: 50%;
   }
