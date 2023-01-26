@@ -606,6 +606,9 @@ nav li:not(:first-child) {
   visibility: hidden;
   opacity: 0;
 }
+.is-hidden .modal {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
 .modal-background {
   top: 0;
   left: 0;
@@ -625,18 +628,23 @@ nav li:not(:first-child) {
   border-radius: 4px;
   position: fixed;
   z-index: 2;
-  transform: translateX(-50%) translateY(-50%);
   animation-name: modalopen;
   animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-direction: normal;
   animation-fill-mode: forwards;
+  transition-property: visibility opacity transform;
+  transform: translate(-50%, -50%);
+  transition-duration: 2s;
+  opacity: 1;
+  visibility: visible;
+  display: block;
 }
 .button-close {
   width: 30px;
   height: 30px;
   background-color: var(--third-color);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
   margin-top: 8px;
